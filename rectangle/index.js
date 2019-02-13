@@ -11,6 +11,7 @@ dispatch({type: null}); // Here we're making a call to dispatch() - this trigger
 var dimensions = ['height', 'width'];
 dimensions.forEach(dimension => {
     document.getElementById(dimension).addEventListener('click', e => {
+        console.log(e);
         dispatch({
             type: 'SIZE',
             dimension
